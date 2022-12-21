@@ -13,7 +13,6 @@ import SignupPage from './pages/SignupPage/SignupPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage/ResetPasswordPage'
 import { Header } from './components/Header/header'
-import TempTodo from './components/tempTodo'
 
 const Routes = () => {
   return (
@@ -24,7 +23,7 @@ const Routes = () => {
       <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
       <Set wrap={Header}>
         <Private unauthenticated="login">
-          <Route path="/admin/todos" page={TempTodo} name="todos" />
+          <Route path="/admin/todos" page={TodosPage} name="todos" />
         </Private>
         <Route path="/" page={HomePage} name="home" />
       </Set>
