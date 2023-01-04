@@ -1,4 +1,4 @@
-import { Submit } from '@redwoodjs/forms'
+import { Submit } from '@redwoodjs/forms' 
 import React from 'react'
 
 export const Button = (props) => {
