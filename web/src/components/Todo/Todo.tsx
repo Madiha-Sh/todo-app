@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { QUERY as refetchTodosQuery } from 'src/components/TodosCell'
 import { TodoForm } from '../TodoForm/TodoForm'
 
-const DELETE_TODO = gql`
+const DELETE_TODO = gql` 
   mutation DeleteTodoMutation($id: Int!) {
     deleteTodo(id: $id) {
       id
